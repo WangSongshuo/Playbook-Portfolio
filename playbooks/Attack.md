@@ -12,17 +12,19 @@ Identify, investigate, and respond to potential attacks detected by SIEM alerts,
 
 ---
 
-## 3. Analysis
-### Step 1 – Validate Alerts
+## 3.Identify False Positives
+### Step 1 – First glance
 - Check if the request contains:  
-  - **Accessing what should not be accessed** (e.g., `/etc/passwd`).  
-  - **Containing what should not appear** (e.g., SQL commands, encoded payloads).  
+  - **Accessing what should not be accessed** (e.g., `/etc/passwd`,bak,conf files).  
+  - **Containing what should not appear** (e.g., malicious SQL commands, encoded payloads).
+  - If one of them are ture, go Step 2, otherwise close the alert as false positive.
 
-### Step 2 – Identify False Positives
-- Internal SQL queries misclassified as SQL injection.  
-- Benign file uploads misclassified as malware.  
-- VPN logins from outsourced teams.  
-- Internal commands flagged by keyword rules.  
+### Step 2 – Analyze whether the attack is successful
+- Check if:
+- **There is a response**(code 200,300,even 500).
+- If yes,check
+- **Response of the attack query**(any reply to the attack is dangrous,e.g.,ipconfig,whoami,select top1 password from ...).
+- 
 
 ### Step 3 – Confirm True Positives
 - **SQL injection** → look for SQL errors or DB response.  
