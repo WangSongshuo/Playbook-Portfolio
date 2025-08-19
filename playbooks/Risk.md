@@ -26,24 +26,24 @@ Ensure risks are properly documented, assessed, and either mitigated or accepted
 
 ## 3. Risk Analysis
 - **Risk Formula**  
-- **Asset Value** → Score based on CIA (1–10).  
-- **Risk Factor** → Defined by **Likelihood × Impact**.  
-  - Likelihood: Rare (1) → Certain (5).  
-  - Impact: Minor (1) → Critical (5).  
-- **Protection Factor** → Lower score if strong controls exist.  
+- **Asset (1–5)**: value based on CIA.
+- **Likelihood (1–5)**: Rare(1) … Likely(5).
+- **Impact (1–5)**: Minor(1) … Critical(5).
+- **Control Effectiveness (0–1)**: how much existing controls reduce risk.
+  - 0.0 = no effective controls; 0.6 = controls reduce 60% of the risk.
 
-- **Scoring**  
-- Example: Database with customer data  
-  - Asset Value = 9  
-  - Likelihood = 4 (high)  
-  - Impact = 5 (critical)  
-  - Protection Factor = 0.8 (strong access control)  
-  - **Risk Score = 9 × (4×5) × 0.8 = 144**  
+**Example** (Customer DB):
+- Asset = 5  
+- Likelihood = 4  
+- Impact = 5  
+- Control Effectiveness = 0.6  
+- **Risk Score = 5 × 4 × 5 × (1 − 0.6) = 40**
 
 - **Thresholds**  
-- ≤ 20 → Low risk (acceptable).  
-- 21–40 → Medium risk (monitor/mitigate).  
-- > 40 → High risk (not acceptable, requires treatment).  
+- **0–20** → Low (acceptable; monitor)  
+- **21–40** → Medium (mitigate if feasible)  
+- **41–75** → High (not acceptable → treat)  
+- **>75** → Critical (immediate action)
 
 ---
 
