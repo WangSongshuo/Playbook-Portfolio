@@ -2,6 +2,7 @@
 
 ## 1. Objective
 Provide a structured approach for identifying, analyzing, evaluating, and managing risks related to information assets.  
+
 Ensure risks are properly documented, assessed, and either mitigated or accepted based on organizational risk appetite.
 
 Perform gap analysis, to analyze the target security level.
