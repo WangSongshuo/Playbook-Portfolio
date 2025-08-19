@@ -28,10 +28,10 @@
 
 ### Step 2 – Analyze whether the attack is successful
 - Check if:
- - **There is a response**(code 200,300,even 500).
+  - **There is a response**(code 200,300,even 500).
 - If yes,check
- - **Response of the attack query**(any reply to the attack is dangrous,e.g.,ipconfig,whoami,select top1 password from ...).
- - Go step 3
+  - **Response of the attack query**(any reply to the attack is dangrous,e.g.,ipconfig,whoami,select top1 password from ...).
+  - Go step 3
 - If no,then it likely got filtered by firewall/IPS(if necessary,check the pacap file for futher analyze.)
 - After confirming from the firewall interruption history, close the alert.
 
