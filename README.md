@@ -9,15 +9,15 @@ The purpose is to showcase how incidents are analyzed, handled, and improved in 
 ---
 
 ## 📂 Structure
-- **playbooks/** → Step-by-step response procedures (e.g. phishing, brute force, suspicious PowerShell).
+- **playbooks/** → Step-by-step response procedures.
 - **detections/** → Example SIEM detection rules (Splunk SPL, Sentinel KQL).
 - **resources/** → Useful references and ATT&CK mappings.
 
 ---
 
 ## 🚀 Examples
-- [Phishing Email Playbook](playbooks/phishing-email-playbook.md)
-- [Brute Force Login Detection](detections/brute-force-splunk-query.md)
+- [Attack Analyze Playbook](playbooks/Attack.md)
+- [SQL injection Example](detections/SQL.md)
 
 ---
 
