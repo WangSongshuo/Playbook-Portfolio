@@ -5,7 +5,7 @@ The purpose is to showcase how incidents are analyzed, handled, and improved in 
 
 ---
 
-## 🚀 Examples
+## 🚀 Playbooks
 - [Attack Analyze Playbook](playbooks/Attack.md)
 - [Risk management Playbook](playbooks/Risk.md)
 
