@@ -3,11 +3,13 @@
 ## 1. Objective 
 - Identify, investigate, and respond to potential attacks detected by SIEM alerts, ensuring timely mitigation and accurate classification of incidents.
 - Investigate **high-severity alerts** first (command injection, file upload).  
-- Prioritize alerts with **high-frequency IPs**.  
+- Use queries to prioritize alerts with **high-frequency IPs**.  
 
 ![SIEM Dashboard](../SIEMdashboard.jpg)
 
 ![SIEM Dashboard](../dash.jpg)
+
+ ![SIEM query](../Query.jpg)
 ---
 
 ## 2. Detection
@@ -39,7 +41,7 @@
 - **Attack method** → identify the attack method.  
 - **Find the source** → Where does this attack come from.  
 - **Impact** → What has been impacted by this attack(user,machine,file..).
- ![SIEM query](../Query.jpg)
+
 
 If unclear, export **pcap** for full traffic analysis (data leakage, payload execution, file transfer).  
 
