@@ -53,12 +53,15 @@ Ensure risks are properly documented, assessed, and either mitigated or accepted
 - **Acceptable Risk** → Document, monitor periodically.  
 - **Unacceptable Risk** → Escalate for treatment.  
 
-- Evaluation matrix:  
+
+**Evaluation matrix**
+
 | Risk Score | Category | Decision |
-|------------|----------|----------|
-| 0–20       | Low      | Accept |
+|:----------:|:--------:|:---------|
+| 0–20       | Low      | Accept / Monitor |
 | 21–40      | Medium   | Mitigate if feasible |
-| >40        | High     | Not acceptable → Treat immediately |
+| 41–75      | High     | Not acceptable → Treat |
+| >75        | Critical | Immediate action |
 
 ---
 
