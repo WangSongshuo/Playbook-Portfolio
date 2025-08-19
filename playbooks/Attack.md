@@ -1,7 +1,9 @@
 # SOC Playbook: Attack Investigation
 
-## 1. Objective
-Identify, investigate, and respond to potential attacks detected by SIEM alerts, ensuring timely mitigation and accurate classification of incidents.
+## 1. Objective 
+- Identify, investigate, and respond to potential attacks detected by SIEM alerts, ensuring timely mitigation and accurate classification of incidents.
+- Investigate **high-severity alerts** first (command injection, file upload).  
+- Prioritize alerts with **high-frequency IPs**.  
 
 ![SIEM Dashboard](../SIEMdashboard.jpg)
 ---
@@ -12,25 +14,29 @@ Identify, investigate, and respond to potential attacks detected by SIEM alerts,
 
 ---
 
-## 3.Identify False Positives
-### Step 1 – First glance
+## 3.Analyze the attack
+### Step 1 – Identify flase positives
 - Check if the request contains:  
   - **Accessing what should not be accessed** (e.g., `/etc/passwd`,bak,conf files).  
   - **Containing what should not appear** (e.g., malicious SQL commands, encoded payloads).
   - If one of them are ture, go Step 2, otherwise close the alert as false positive.
+    ![True attack](../strust2.jpg)
 
 ### Step 2 – Analyze whether the attack is successful
 - Check if:
 - **There is a response**(code 200,300,even 500).
 - If yes,check
 - **Response of the attack query**(any reply to the attack is dangrous,e.g.,ipconfig,whoami,select top1 password from ...).
-- 
+- Go step 3
+- If no,then it likely got filtered by firewall/IPS(if necessary,check the pacap file for futher analyze.)
+- After confirming from the firewall interruption history, close the alert.
 
-### Step 3 – Confirm True Positives
-- **SQL injection** → look for SQL errors or DB response.  
-- **Command injection** → identify obfuscated commands (e.g., `invoke`, base64, IP addresses).  
-- **Brute-force login** → repeated failed attempts from same IP.  
-- **Path traversal** → abnormal file access with `../`.  
+### Step 3 – Threat Hunting
+- For Successful attacks:
+- **Report** → Report the attack to IR team at once.  
+- **Attack method** → identify the attack method.  
+- **Find the source** → Where does this attack come from.  
+- **Impact** → What has been impacted by this attack(user,machine,file..).  
 
 If unclear, export **pcap** for full traffic analysis (data leakage, payload execution, file transfer).  
 
@@ -41,15 +47,9 @@ If unclear, export **pcap** for full traffic analysis (data leakage, payload exe
 - **True attack, unsuccessful** → block source IP and close incident.  
 - **True attack, successful** →  
   - Escalate to Incident Response (IR) team.  
-  - Create incident report (timeline, IoCs, affected systems).  
+  - Create incident report (timeline, IoCs, affected systems).
+  - Do [Step 3](#step-3--threat-hunting). 
   - Notify stakeholders.  
-
----
-
-## 5. Prioritization
-- Investigate **high-severity alerts** first (command injection, file upload).  
-- Prioritize alerts with **high-frequency IPs**.  
-
 ---
 
 ## 6. Example Cases
