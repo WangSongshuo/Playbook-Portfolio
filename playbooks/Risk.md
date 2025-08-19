@@ -3,6 +3,8 @@
 ## 1. Objective
 Provide a structured approach for identifying, analyzing, evaluating, and managing risks related to information assets.  
 Ensure risks are properly documented, assessed, and either mitigated or accepted based on organizational risk appetite.
+Perform gap analysis, to analyze the target security level.
+![GAP](../GAP.jpg)
 
 ---
 
@@ -16,12 +18,13 @@ Ensure risks are properly documented, assessed, and either mitigated or accepted
 
 - **Threat Identification**  
   - Use **frameworks like STRIDE** (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).  
-  - Map potential risks to assets.  
+  - Map potential risks to assets.
+ ![STRIDE](../STRIDE.jpg)
 
 - **Control Review**  
   - Identify existing technical/organizational controls (e.g., firewalls, backups, access controls).  
   - Estimate **protection level** (low, medium, high).  
-
+![Process](../process.jpg)
 ---
 
 ## 3. Risk Analysis
