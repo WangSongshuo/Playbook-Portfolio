@@ -3,10 +3,11 @@
 ## 1. Objective
 Identify, investigate, and respond to potential attacks detected by SIEM alerts, ensuring timely mitigation and accurate classification of incidents.
 
+![SIEM Dashboard](../SIEMdashboard.jpg)
 ---
 
 ## 2. Detection
-- Alerts triggered in SIEM (e.g., SQL injection, command injection, brute-force login, path traversal).  
+- Alerts triggered in SIEM (e.g., SQL injection, command injection, brute-force login, webshell).  
 - Indicators include suspicious keywords, abnormal file access attempts, repeated login failures, or payload-like patterns.  
 
 ---
