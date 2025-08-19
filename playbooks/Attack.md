@@ -6,6 +6,8 @@
 - Prioritize alerts with **high-frequency IPs**.  
 
 ![SIEM Dashboard](../SIEMdashboard.jpg)
+
+![SIEM Dashboard](../dash.jpg)
 ---
 
 ## 2. Detection
@@ -36,7 +38,8 @@
 - **Report** → Report the attack to IR team at once.  
 - **Attack method** → identify the attack method.  
 - **Find the source** → Where does this attack come from.  
-- **Impact** → What has been impacted by this attack(user,machine,file..).  
+- **Impact** → What has been impacted by this attack(user,machine,file..).
+ ![SIEM query](../Query.jpg)
 
 If unclear, export **pcap** for full traffic analysis (data leakage, payload execution, file transfer).  
 
