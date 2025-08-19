@@ -36,7 +36,7 @@
 - After confirming from the firewall interruption history, close the alert.
 
 ### Step 3 – Threat Hunting
-- For Successful attacks:
+For Successful attacks:
 - **Report** → Report the attack to IR team at once.  
 - **Attack method** → identify the attack method.  
 - **Find the source** → Where does this attack come from.  
