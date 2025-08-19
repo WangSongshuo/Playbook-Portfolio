@@ -89,17 +89,4 @@ Perform gap analysis, to analyze the target security level.
 - Major security incidents occur.  
 - Regulations change.  
 
----
 
-## 7. Example Case
-- **Asset**: Customer Database  
-- **Identified Threat**: SQL Injection (Tampering, Information Disclosure).  
-- **Existing Control**: WAF + parameterized queries.  
-- **Risk Calculation**:  
-- Asset Value = 9  
-- Likelihood = 4  
-- Impact = 5  
-- Protection Factor = 0.8  
-- Risk = 144 → High Risk  
-- **Evaluation**: Not acceptable.  
-- **Treatment**: Additional code review + query logging + SOC alerting.  
