@@ -22,6 +22,8 @@ Perform gap analysis, to analyze the target security level.
 - **Threat Identification**  
   - Use **frameworks like STRIDE** (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).  
   - Map potential risks to assets.
+ 
+    
  ![STRIDE](../STRIDE.jpg)
 
 - **Control Review**  
