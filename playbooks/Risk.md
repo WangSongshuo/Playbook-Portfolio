@@ -8,7 +8,7 @@ Ensure risks are properly documented, assessed, and either mitigated or accepted
 Perform gap analysis, to analyze the target security level.
 
 ![GAP](../GAP.jpg)
-![GAP2](../gap2.jpg)
+
 
 ---
 
