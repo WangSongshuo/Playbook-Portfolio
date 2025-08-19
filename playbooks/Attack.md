@@ -19,20 +19,20 @@
 ---
 
 ## 3.Analyze the attack
-### Step 1 – Identify flase positives
+### Step 1 – Identify false positives
 - Check if the request contains:  
   - **Accessing what should not be accessed** (e.g., `/etc/passwd`,bak,conf files).  
   - **Containing what should not appear** (e.g., malicious SQL commands, encoded payloads).
-  - If one of them are ture, go Step 2, otherwise close the alert as false positive.
+  - If one of them are true, go Step 2, otherwise close the alert as false positive.
     ![True attack](../strust2.jpg)
 
 ### Step 2 – Analyze whether the attack is successful
 - Check if:
   - **There is a response**(code 200,300,even 500).
 - If yes,check
-  - **Response of the attack query**(any reply to the attack is dangrous,e.g.,ipconfig,whoami,select top1 password from ...).
+  - **Response of the attack query**(any reply to the attack is dangerous,e.g.,ipconfig,whoami,select top1 password from ...).
   - Go step 3
-- If no,then it likely got filtered by firewall/IPS(if necessary,check the pacap file for futher analyze.)
+- If no,then it likely got filtered by firewall/IPS(if necessary,check the pcap file for futher analyze.)
 - After confirming from the firewall interruption history, close the alert.
 
 ### Step 3 – Threat Hunting
