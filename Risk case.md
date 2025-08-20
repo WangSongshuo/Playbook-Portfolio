@@ -17,7 +17,8 @@
 
 ---
 
-## 3) Likelihood – Quantified Step-by-Step
+> Parameters: To caculate the risk value, we will need .
+## 3) Likelihood 
 We decompose likelihood into three measurable factors (0–1 scale), then map the composite score to a 1–5 rating.
 
 **Factors (example values):**
