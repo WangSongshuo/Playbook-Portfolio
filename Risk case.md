@@ -73,7 +73,7 @@ Average = 3.70 / 4 = 0.925
 
 ---
 
-## 5) Control Effectiveness – Combined Probability
+## 5) Control Effectiveness & Protection Value
 We model multiple controls as independent probabilities. For each control with effectiveness `e_i`, the combined failure probability is Π(1 − e_i).  
 Thus:  
 `Overall Effectiveness = 1 − Π(1 − e_i)`
@@ -84,17 +84,14 @@ Thus:
 - Vulnerability Scanning / Pentests = 0.15  
 - Developer Training (limited) = 0.05  
 
-**Step-by-step:**
+**Calculation:**
 
 (1 − 0.25) = 0.75
 (1 − 0.20) = 0.80
 (1 − 0.15) = 0.85
 (1 − 0.05) = 0.95
 
-Step A: 0.75 × 0.80 = 0.6000
-Step B: 0.6000 × 0.85 = 0.5100
-Step C: 0.5100 × 0.95 = 0.4845
-
+0.75 × 0.80 × 0.85 × 0.95= 0.4845
 Combined failure probability = 0.4845
 Overall Control Effectiveness = 1 − 0.4845 = 0.5155
 
