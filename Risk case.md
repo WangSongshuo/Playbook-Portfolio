@@ -24,16 +24,15 @@ We decompose likelihood into three measurable factors (0–1 scale), then map th
 
 **Factors (example values):**
 - **Exploitability = 0.90**  
-  SQLi exploits and automated tools are widely available.
+  SQLi exploits and automated tools are widely available(like sqlmap, even a script kiddie could use it).
 - **Exposure = 0.80**  
-  The front-end application is internet-facing with input fields; input validation is incomplete.  
+  The front-end application is internet-facing with input fields(depends on how many web apps are connected to the database); input validation is incomplete.  
 - **Threat Activity = 0.70**  
   SQL injection remains a frequent attack method (OWASP Top 10, DBIR reports).
 
 **Composite Probability Calculation:**
 
-Step 1: 0.90 × 0.80 = 0.72
-Step 2: 0.72 × 0.70 = 0.504
+ 0.90 × 0.80 × 0.70= 0.504 
 
 - **Composite Likelihood = 0.504**
 
