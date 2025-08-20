@@ -47,11 +47,11 @@ We decompose likelihood into three measurable factors (0–1 scale), then map th
 
 ---
 
-## 4) Impact – Quantified Step-by-Step
+## 4) Impact
 Impact is broken down into sub-factors (0–1), averaged, and then mapped to a 1–5 scale.
 
 **Sub-factors (example values):**
-- **Data Sensitivity = 1.00** (PII + payment data)  
+- **Data Sensitivity = 1.00** (admin passwd)  
 - **Business Criticality = 1.00** (system critical for operations)  
 - **Regulatory Exposure = 0.90** (GDPR and financial compliance)  
 - **Recovery Complexity = 0.80** (difficult to restore quickly)  
