@@ -12,7 +12,7 @@
 
 ---
 
-## 2) Threat Identification (STRIDE)
+## 2) Risk Identification (STRIDE)
 - **Threat Type:** Tampering, Information Disclosure  
 - **Attack Vector Example:** Malicious input injected via web forms or APIs, allowing attackers to read, modify, or exfiltrate database content.
 
