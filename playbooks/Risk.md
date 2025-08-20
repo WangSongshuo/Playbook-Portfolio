@@ -12,6 +12,8 @@ Perform gap analysis, to analyze the target security level.
 
 ---
 
+ For a detailed risk analysis case, see [SQL Injection Risk Case](../Risk case.md).
+
 ## 2. Risk Identification
 - **Asset Classification**  
   - Identify critical assets (systems, data, services).  
