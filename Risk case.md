@@ -17,7 +17,7 @@
 
 ---
 
-> Parameters: To caculate the risk value for an asset, we will need 4 parameters:Asset, Likelihood = 4, Impact = 5, Control Effectiveness = 0.6.
+### > Parameters: To caculate the risk value for an asset, we will need 4 parameters:Asset, Likelihood, Impact, Control Effectiveness.
 ## 3) Likelihood 
 We decompose likelihood into three measurable factors (0–1 scale), then map the composite score to a 1–5 rating.
 
