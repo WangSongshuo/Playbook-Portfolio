@@ -130,12 +130,18 @@ This risk exceeds tolerance and must be treated.
 
 ---
 
-## 8) Recommendations
-- **Short-term:**  
-  1. Enforce parameterized queries across all applications.  
-  2. Improve WAF rules and monitoring (reduce false negatives).  
-  3. Integrate SAST/DAST into CI/CD pipelines.  
-  4. Conduct targeted penetration testing on high-risk endpoints.  
+## 8) Mitigation & Controls (e.g ISO27001 Annex A)
+
+- **Technical Controls**
+  1. **8.13 Information Backup** – Regular backups of critical data to ensure recovery in case of loss or corruption.
+  2. **8.23 Web Filtering** – Protect systems from unauthorized access and malicious content.
+
+- **People Controls**
+  1. **6.3 Awareness, Education and Training** – Educate staff on security policies, phishing awareness, and safe handling of sensitive information.
+
+- **Organizational Controls**
+  1. **5.2 Information Security Roles & Responsibilities** – Define security responsibilities across the organization to ensure accountability.
+
 
 - **Follow-up:**  
   Recalculate the risk score after improving controls (expected Control Effectiveness ≥ 0.7).
