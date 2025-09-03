@@ -2,7 +2,7 @@
 
 ###  To caculate the risk value for an asset, we will need 4 parameters: Asset, Likelihood, Impact, Control Effectiveness. 
 
-# Risk – SQL Injection (Detailed Calculation)
+# Risk – SQL DB (Detailed Calculation)
 
 ## 1) Asset & Context
 - **Asset:** SQL Database (Customer Orders & Payment Info)  
