@@ -12,7 +12,7 @@ Perform gap analysis, to analyze the target security level.
 
 ---
 
- For a detailed risk analysis case, see [SQL Injection Risk Case](../Risk_case.md#Risk_case).
+ For a detailed risk analysis case, see [SQL database Risk Case](../Risk_case.md#Risk_case).
 
 ## 2. Risk Identification
 - **Asset Classification**  
